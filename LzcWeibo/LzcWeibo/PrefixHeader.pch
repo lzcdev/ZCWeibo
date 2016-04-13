@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  LzcWeibo
+//
+//  Created by LuzhiChao on 16/4/13.
+//  Copyright © 2016年 LuzhiChao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#endif /* PrefixHeader_pch */
