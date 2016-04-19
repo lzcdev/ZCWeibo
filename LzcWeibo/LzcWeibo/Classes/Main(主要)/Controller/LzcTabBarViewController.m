@@ -12,7 +12,12 @@
 #import "LZCDiscoverTableViewController.h"
 #import "LZCMeTableViewController.h"
 #import "UIImage+ZC.h"
+#import "ZCTabBar.h"
+
 @interface LzcTabBarViewController ()
+
+#pragma mark 自定义TabBar
+@property (nonatomic, strong) ZCTabBar *customTabBar;
 
 @end
 
@@ -22,11 +27,37 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //初始化TabBar
+    [self setupTabBar];
+
     //初始化所有子控制器
-    
     [self setupAllChildViewController];
     
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    //移除系统的TabBar上的按钮
+    for (UIView *child in self.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) {
+            [child removeFromSuperview];
+        }
+    }
+    
+}
+/**
+ *  初始化TabBar,自定义的TabBar添加到系统的TabBar上
+ */
+- (void)setupTabBar
+{
+    _customTabBar = [[ZCTabBar alloc]init];
+    _customTabBar.backgroundColor = [UIColor redColor];
+    _customTabBar.frame = self.tabBar.bounds;
+    [self.tabBar addSubview:_customTabBar];
+}
+
 /**
  *  初始化所有子控制器
  */
@@ -50,6 +81,7 @@
     [self setupChildViewController:me title:@"我" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
 
 }
+
 /**
  *  初始化一个子控制器
  *
@@ -72,6 +104,8 @@
     //2.包装一个导航
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:childVC];
     [self addChildViewController:nav];
+    
+    [_customTabBar addTabBarButonWithItem:childVC.tabBarItem];
 
 }
 - (void)didReceiveMemoryWarning {
