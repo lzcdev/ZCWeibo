@@ -14,7 +14,7 @@
 #import "UIImage+ZC.h"
 #import "ZCTabBar.h"
 
-@interface LzcTabBarViewController ()
+@interface LzcTabBarViewController ()<ZCTabBarDelegate>
 
 #pragma mark 自定义TabBar
 @property (nonatomic, strong) ZCTabBar *customTabBar;
@@ -53,9 +53,21 @@
 - (void)setupTabBar
 {
     _customTabBar = [[ZCTabBar alloc]init];
-    _customTabBar.backgroundColor = [UIColor redColor];
     _customTabBar.frame = self.tabBar.bounds;
+    _customTabBar.delegate = self;
     [self.tabBar addSubview:_customTabBar];
+}
+
+/**
+ *  监听tabBar按钮的改变
+ *
+ *  @param tabBar <#tabBar description#>
+ *  @param from   原来选中的位置
+ *  @param to     现在选中的位置
+ */
+- (void)tabBar:(ZCTabBar *)tabBar didseletedButtonFrom:(int)from to:(int)to
+{
+    self.selectedIndex = to;
 }
 
 /**

@@ -221,6 +221,7 @@
 		206B862B1CBD56FE00F3BD43 /* tabbar_profile_selected_os7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206B85611CBD56FE00F3BD43 /* tabbar_profile_selected_os7@2x.png */; };
 		206B862C1CBD56FE00F3BD43 /* tabbar_slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 206B85621CBD56FE00F3BD43 /* tabbar_slider.png */; };
 		206B862D1CBD56FE00F3BD43 /* tabbar_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206B85631CBD56FE00F3BD43 /* tabbar_slider@2x.png */; };
+		20BD594F1CC7BC5E0005E850 /* ZCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */; };
 		20FDE1581CC67FEE005A3241 /* ZCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FDE1571CC67FEE005A3241 /* ZCTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -470,6 +471,8 @@
 		206B85611CBD56FE00F3BD43 /* tabbar_profile_selected_os7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected_os7@2x.png"; sourceTree = "<group>"; };
 		206B85621CBD56FE00F3BD43 /* tabbar_slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_slider.png; sourceTree = "<group>"; };
 		206B85631CBD56FE00F3BD43 /* tabbar_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_slider@2x.png"; sourceTree = "<group>"; };
+		20BD594D1CC7BC5E0005E850 /* ZCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarButton.h; sourceTree = "<group>"; };
+		20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarButton.m; sourceTree = "<group>"; };
 		20FDE1561CC67FEE005A3241 /* ZCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBar.h; sourceTree = "<group>"; };
 		20FDE1571CC67FEE005A3241 /* ZCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -609,6 +612,8 @@
 			children = (
 				20FDE1561CC67FEE005A3241 /* ZCTabBar.h */,
 				20FDE1571CC67FEE005A3241 /* ZCTabBar.m */,
+				20BD594D1CC7BC5E0005E850 /* ZCTabBarButton.h */,
+				20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1380,6 +1385,7 @@
 			files = (
 				20FDE1581CC67FEE005A3241 /* ZCTabBar.m in Sources */,
 				2003119C1CBEA7F1008E2427 /* UIImage+ZC.m in Sources */,
+				20BD594F1CC7BC5E0005E850 /* ZCTabBarButton.m in Sources */,
 				200311911CBE9A96008E2427 /* LZCHomeTableViewController.m in Sources */,
 				200311921CBE9A96008E2427 /* LzcTabBarViewController.m in Sources */,
 				200311951CBE9A96008E2427 /* AppDelegate.m in Sources */,
