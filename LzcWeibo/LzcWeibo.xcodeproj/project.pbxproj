@@ -16,6 +16,7 @@
 		200311961CBE9A96008E2427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2003118E1CBE9A96008E2427 /* LaunchScreen.storyboard */; };
 		200311971CBE9A96008E2427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003118F1CBE9A96008E2427 /* main.m */; };
 		2003119C1CBEA7F1008E2427 /* UIImage+ZC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003119B1CBEA7F1008E2427 /* UIImage+ZC.m */; };
+		2005EAB81CCBCA68009ABCBB /* ZCBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005EAB71CCBCA68009ABCBB /* ZCBadgeButton.m */; };
 		206B84631CBD51B400F3BD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206B84621CBD51B400F3BD43 /* Assets.xcassets */; };
 		206B84711CBD51B400F3BD43 /* LzcWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B84701CBD51B400F3BD43 /* LzcWeiboTests.m */; };
 		206B847C1CBD51B400F3BD43 /* LzcWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B847B1CBD51B400F3BD43 /* LzcWeiboUITests.m */; };
@@ -260,6 +261,8 @@
 		200311981CBEA01F008E2427 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2003119A1CBEA7F1008E2427 /* UIImage+ZC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZC.h"; sourceTree = "<group>"; };
 		2003119B1CBEA7F1008E2427 /* UIImage+ZC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZC.m"; sourceTree = "<group>"; };
+		2005EAB61CCBCA68009ABCBB /* ZCBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBadgeButton.h; sourceTree = "<group>"; };
+		2005EAB71CCBCA68009ABCBB /* ZCBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBadgeButton.m; sourceTree = "<group>"; };
 		206B84531CBD51B400F3BD43 /* LzcWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LzcWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206B84621CBD51B400F3BD43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		206B84671CBD51B400F3BD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -614,6 +617,8 @@
 				20FDE1571CC67FEE005A3241 /* ZCTabBar.m */,
 				20BD594D1CC7BC5E0005E850 /* ZCTabBarButton.h */,
 				20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */,
+				2005EAB61CCBCA68009ABCBB /* ZCBadgeButton.h */,
+				2005EAB71CCBCA68009ABCBB /* ZCBadgeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1391,6 +1396,7 @@
 				200311951CBE9A96008E2427 /* AppDelegate.m in Sources */,
 				200311941CBE9A96008E2427 /* LZCMessageTableViewController.m in Sources */,
 				200311901CBE9A96008E2427 /* LZCDiscoverTableViewController.m in Sources */,
+				2005EAB81CCBCA68009ABCBB /* ZCBadgeButton.m in Sources */,
 				200311971CBE9A96008E2427 /* main.m in Sources */,
 				200311931CBE9A96008E2427 /* LZCMeTableViewController.m in Sources */,
 			);
