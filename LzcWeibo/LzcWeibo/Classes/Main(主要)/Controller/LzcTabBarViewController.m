@@ -77,17 +77,17 @@
 {
     //1. 首页
     LZCHomeTableViewController *home = [[LZCHomeTableViewController alloc]init];
-    home.tabBarItem.badgeValue = @"6";
+    //home.tabBarItem.badgeValue = @"6";
     [self setupChildViewController:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     
     //2. 消息
     LZCMessageTableViewController *message = [[LZCMessageTableViewController alloc]init];
-    message.tabBarItem.badgeValue = @"44";
+    message.tabBarItem.badgeValue = @"2";
     [self setupChildViewController:message title:@"消息" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
     
     //3. 广场
     LZCDiscoverTableViewController *discover = [[LZCDiscoverTableViewController alloc]init];
-    discover.tabBarItem.badgeValue = @"123";
+    //discover.tabBarItem.badgeValue = @"";
     [self setupChildViewController:discover title:@"广场" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
     
     //4.我
