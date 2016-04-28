@@ -11,6 +11,7 @@
 #import "LZCMessageTableViewController.h"
 #import "LZCDiscoverTableViewController.h"
 #import "LZCMeTableViewController.h"
+#import "ZCNavigationController.h"
 #import "UIImage+ZC.h"
 #import "ZCTabBar.h"
 
@@ -116,7 +117,7 @@
         childVC.tabBarItem.selectedImage = [UIImage imageWithName:selectedImageName];
     }
     //2.包装一个导航
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:childVC];
+    ZCNavigationController *nav = [[ZCNavigationController alloc]initWithRootViewController:childVC];
     [self addChildViewController:nav];
     
     [_customTabBar addTabBarButonWithItem:childVC.tabBarItem];

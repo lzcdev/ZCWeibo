@@ -222,6 +222,7 @@
 		206B862B1CBD56FE00F3BD43 /* tabbar_profile_selected_os7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206B85611CBD56FE00F3BD43 /* tabbar_profile_selected_os7@2x.png */; };
 		206B862C1CBD56FE00F3BD43 /* tabbar_slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 206B85621CBD56FE00F3BD43 /* tabbar_slider.png */; };
 		206B862D1CBD56FE00F3BD43 /* tabbar_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 206B85631CBD56FE00F3BD43 /* tabbar_slider@2x.png */; };
+		20AA42F51CD25ED900FCC0F7 /* ZCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AA42F41CD25ED900FCC0F7 /* ZCNavigationController.m */; };
 		20BD594F1CC7BC5E0005E850 /* ZCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */; };
 		20FDE1581CC67FEE005A3241 /* ZCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FDE1571CC67FEE005A3241 /* ZCTabBar.m */; };
 /* End PBXBuildFile section */
@@ -474,6 +475,8 @@
 		206B85611CBD56FE00F3BD43 /* tabbar_profile_selected_os7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected_os7@2x.png"; sourceTree = "<group>"; };
 		206B85621CBD56FE00F3BD43 /* tabbar_slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_slider.png; sourceTree = "<group>"; };
 		206B85631CBD56FE00F3BD43 /* tabbar_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_slider@2x.png"; sourceTree = "<group>"; };
+		20AA42F31CD25ED900FCC0F7 /* ZCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNavigationController.h; sourceTree = "<group>"; };
+		20AA42F41CD25ED900FCC0F7 /* ZCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNavigationController.m; sourceTree = "<group>"; };
 		20BD594D1CC7BC5E0005E850 /* ZCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarButton.h; sourceTree = "<group>"; };
 		20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarButton.m; sourceTree = "<group>"; };
 		20FDE1561CC67FEE005A3241 /* ZCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBar.h; sourceTree = "<group>"; };
@@ -599,6 +602,8 @@
 			children = (
 				2003117B1CBE9A96008E2427 /* LzcTabBarViewController.h */,
 				2003117C1CBE9A96008E2427 /* LzcTabBarViewController.m */,
+				20AA42F31CD25ED900FCC0F7 /* ZCNavigationController.h */,
+				20AA42F41CD25ED900FCC0F7 /* ZCNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1396,6 +1401,7 @@
 				200311951CBE9A96008E2427 /* AppDelegate.m in Sources */,
 				200311941CBE9A96008E2427 /* LZCMessageTableViewController.m in Sources */,
 				200311901CBE9A96008E2427 /* LZCDiscoverTableViewController.m in Sources */,
+				20AA42F51CD25ED900FCC0F7 /* ZCNavigationController.m in Sources */,
 				2005EAB81CCBCA68009ABCBB /* ZCBadgeButton.m in Sources */,
 				200311971CBE9A96008E2427 /* main.m in Sources */,
 				200311931CBE9A96008E2427 /* LZCMeTableViewController.m in Sources */,
