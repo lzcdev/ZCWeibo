@@ -14,4 +14,14 @@
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 #import "UIImage+ZC.h"
 
+#ifdef DEBUG
+
+#define ZCLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define ZCLog(...)
+
+#endif
+
 #endif /* PrefixHeader_pch */

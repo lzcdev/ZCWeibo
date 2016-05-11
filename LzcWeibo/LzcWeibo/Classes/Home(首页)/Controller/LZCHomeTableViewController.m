@@ -7,7 +7,8 @@
 //
 
 #import "LZCHomeTableViewController.h"
-
+#import "ZCBadgeButton.h"
+#import "UIBarButtonItem+ZC.h"
 @interface LZCHomeTableViewController ()
 
 @end
@@ -17,13 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //左边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithIcon:@"navigationbar_friendsearch_os7" highIcon:@"navigationbar_friendsearch_highlighted_os7" target:self action:@selector(findFriend)];
+    //右边按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithIcon:@"navigationbar_pop_os7" highIcon:@"navigationbar_pop_highlighted_os7" target:self action:@selector(pop)];
 }
 
+
+- (void)findFriend
+{
+    ZCLog(@"a");
+}
+
+- (void)pop
+{
+    ZCLog(@"pop");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

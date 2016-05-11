@@ -225,6 +225,8 @@
 		20AA42F51CD25ED900FCC0F7 /* ZCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AA42F41CD25ED900FCC0F7 /* ZCNavigationController.m */; };
 		20BD594F1CC7BC5E0005E850 /* ZCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */; };
 		20FDE1581CC67FEE005A3241 /* ZCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FDE1571CC67FEE005A3241 /* ZCTabBar.m */; };
+		20FE89981CE3891F00ACF1E3 /* UIBarButtonItem+ZC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FE89971CE3891F00ACF1E3 /* UIBarButtonItem+ZC.m */; };
+		20FE899B1CE3933D00ACF1E3 /* ZCSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FE899A1CE3933D00ACF1E3 /* ZCSearchBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -481,6 +483,10 @@
 		20BD594E1CC7BC5E0005E850 /* ZCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarButton.m; sourceTree = "<group>"; };
 		20FDE1561CC67FEE005A3241 /* ZCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBar.h; sourceTree = "<group>"; };
 		20FDE1571CC67FEE005A3241 /* ZCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBar.m; sourceTree = "<group>"; };
+		20FE89961CE3891F00ACF1E3 /* UIBarButtonItem+ZC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZC.h"; sourceTree = "<group>"; };
+		20FE89971CE3891F00ACF1E3 /* UIBarButtonItem+ZC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZC.m"; sourceTree = "<group>"; };
+		20FE89991CE3933D00ACF1E3 /* ZCSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchBar.h; sourceTree = "<group>"; };
+		20FE899A1CE3933D00ACF1E3 /* ZCSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSearchBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -550,6 +556,8 @@
 		200311721CBE9A96008E2427 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20FE89991CE3933D00ACF1E3 /* ZCSearchBar.h */,
+				20FE899A1CE3933D00ACF1E3 /* ZCSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -711,6 +719,8 @@
 			children = (
 				2003119A1CBEA7F1008E2427 /* UIImage+ZC.h */,
 				2003119B1CBEA7F1008E2427 /* UIImage+ZC.m */,
+				20FE89961CE3891F00ACF1E3 /* UIBarButtonItem+ZC.h */,
+				20FE89971CE3891F00ACF1E3 /* UIBarButtonItem+ZC.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1400,6 +1410,8 @@
 				200311921CBE9A96008E2427 /* LzcTabBarViewController.m in Sources */,
 				200311951CBE9A96008E2427 /* AppDelegate.m in Sources */,
 				200311941CBE9A96008E2427 /* LZCMessageTableViewController.m in Sources */,
+				20FE89981CE3891F00ACF1E3 /* UIBarButtonItem+ZC.m in Sources */,
+				20FE899B1CE3933D00ACF1E3 /* ZCSearchBar.m in Sources */,
 				200311901CBE9A96008E2427 /* LZCDiscoverTableViewController.m in Sources */,
 				20AA42F51CD25ED900FCC0F7 /* ZCNavigationController.m in Sources */,
 				2005EAB81CCBCA68009ABCBB /* ZCBadgeButton.m in Sources */,
