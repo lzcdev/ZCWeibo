@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LzcTabBarViewController.h"
+#import "ZCNewfeatureViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -18,7 +20,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[LzcTabBarViewController alloc]init];
+    
+    // 取出沙盒中存储的上次使用的软件的版本号
+    NSUserDefaults *defauls = [NSUserDefaults standardUserDefaults];
+    NSString *lastVersion = [defauls stringForKey:@"lastVersion"];
+    
+    // 获取当前软件的版本号
+   NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+    if (![currentVersion isEqualToString:lastVersion]) {
+        // 新版本
+        self.window.rootViewController = [[ZCNewfeatureViewController alloc]init];
+        
+        // 存储新版本
+        [defauls setObject:currentVersion forKey:@"lastVersion"];
+        [defauls synchronize];
+        
+    }else{
+        self.window.rootViewController = [[LzcTabBarViewController alloc]init];
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }

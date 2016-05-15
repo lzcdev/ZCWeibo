@@ -17,6 +17,7 @@
 		200311971CBE9A96008E2427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003118F1CBE9A96008E2427 /* main.m */; };
 		2003119C1CBEA7F1008E2427 /* UIImage+ZC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003119B1CBEA7F1008E2427 /* UIImage+ZC.m */; };
 		2005EAB81CCBCA68009ABCBB /* ZCBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2005EAB71CCBCA68009ABCBB /* ZCBadgeButton.m */; };
+		2049CC371CE8CB57000BB710 /* ZCNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2049CC361CE8CB57000BB710 /* ZCNewfeatureViewController.m */; };
 		206B84631CBD51B400F3BD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206B84621CBD51B400F3BD43 /* Assets.xcassets */; };
 		206B84711CBD51B400F3BD43 /* LzcWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B84701CBD51B400F3BD43 /* LzcWeiboTests.m */; };
 		206B847C1CBD51B400F3BD43 /* LzcWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B847B1CBD51B400F3BD43 /* LzcWeiboUITests.m */; };
@@ -267,6 +268,8 @@
 		2003119B1CBEA7F1008E2427 /* UIImage+ZC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZC.m"; sourceTree = "<group>"; };
 		2005EAB61CCBCA68009ABCBB /* ZCBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBadgeButton.h; sourceTree = "<group>"; };
 		2005EAB71CCBCA68009ABCBB /* ZCBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBadgeButton.m; sourceTree = "<group>"; };
+		2049CC351CE8CB57000BB710 /* ZCNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNewfeatureViewController.h; sourceTree = "<group>"; };
+		2049CC361CE8CB57000BB710 /* ZCNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNewfeatureViewController.m; sourceTree = "<group>"; };
 		206B84531CBD51B400F3BD43 /* LzcWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LzcWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206B84621CBD51B400F3BD43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		206B84671CBD51B400F3BD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -520,6 +523,7 @@
 		2003116C1CBE9A96008E2427 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2049CC2B1CE8C9AE000BB710 /* Newfeature(新特性) */,
 				2003116D1CBE9A96008E2427 /* Discover(广场) */,
 				200311731CBE9A96008E2427 /* Home(首页) */,
 				200311791CBE9A96008E2427 /* Main(主要) */,
@@ -730,6 +734,39 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		2049CC2B1CE8C9AE000BB710 /* Newfeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				2049CC2C1CE8C9AE000BB710 /* Controller */,
+				2049CC2D1CE8C9AE000BB710 /* Model */,
+				2049CC2E1CE8C9AE000BB710 /* View */,
+			);
+			path = "Newfeature(新特性)";
+			sourceTree = "<group>";
+		};
+		2049CC2C1CE8C9AE000BB710 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2049CC351CE8CB57000BB710 /* ZCNewfeatureViewController.h */,
+				2049CC361CE8CB57000BB710 /* ZCNewfeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2049CC2D1CE8C9AE000BB710 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2049CC2E1CE8C9AE000BB710 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		206B844A1CBD51B400F3BD43 = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +828,7 @@
 		206B848F1CBD56FE00F3BD43 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				206B85021CBD56FE00F3BD43 /* Newfeature */,
 				206B84901CBD56FE00F3BD43 /* AppIcon */,
 				206B84941CBD56FE00F3BD43 /* Button */,
 				206B84A71CBD56FE00F3BD43 /* Discover */,
@@ -798,7 +836,6 @@
 				206B84BD1CBD56FE00F3BD43 /* Me */,
 				206B84C61CBD56FE00F3BD43 /* More */,
 				206B84CF1CBD56FE00F3BD43 /* NavigationBar */,
-				206B85021CBD56FE00F3BD43 /* Newfeature */,
 				206B851B1CBD56FE00F3BD43 /* Setting */,
 				206B85381CBD56FE00F3BD43 /* TabBar */,
 			);
@@ -1417,6 +1454,7 @@
 				200311941CBE9A96008E2427 /* LZCMessageTableViewController.m in Sources */,
 				20D0663D1CE4D79800A58C37 /* ZCTitleButton.m in Sources */,
 				20FE89981CE3891F00ACF1E3 /* UIBarButtonItem+ZC.m in Sources */,
+				2049CC371CE8CB57000BB710 /* ZCNewfeatureViewController.m in Sources */,
 				20FE899B1CE3933D00ACF1E3 /* ZCSearchBar.m in Sources */,
 				200311901CBE9A96008E2427 /* LZCDiscoverTableViewController.m in Sources */,
 				20AA42F51CD25ED900FCC0F7 /* ZCNavigationController.m in Sources */,
